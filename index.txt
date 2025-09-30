@@ -274,3 +274,49 @@ N=3: 1→2→3 (1→3 is invalid since 3%(2)≠0).
 N=4: paths are 1→2→4 and 1→2→3→4 → 2 ways.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem — Count Matching Subsequence Pairs
+
+You are given two sequences:
+• A of length N: A1 A2 … AN
+• B of length M: B1 B2 … BM
+
+A subsequence of a sequence is obtained by deleting zero or more elements without
+changing the order of the remaining elements. Two subsequences taken from the
+SAME sequence are considered different if they use different index positions,
+even if their values are identical (i.e., we count by index choices). The empty
+subsequence is allowed.
+
+Task
+Count the number of pairs (A_seq, B_seq) such that:
+• A_seq is a subsequence of A,
+• B_seq is a subsequence of B, and
+• A_seq and B_seq are exactly the same sequence (same length and same elements
+  in the same order).
+
+Output the count modulo 1,000,000,007.
+
+Input Format
+• First line: two integers N M
+• Second line: N integers A1 … AN
+• Third line:  M integers B1 … BM
+
+Constraints
+• 1 ≤ N, M ≤ 3×10^3
+• 1 ≤ Ai, Bi ≤ 10^5
+• All values are integers.
+
+Output Format
+• Print a single integer — the number of valid pairs modulo 1e9+7.
+
+Example
+Input
+2 2
+2 7
+7 2
+Output
+3
+Explanation: Matching subsequences are (), (2), (7).
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
