@@ -31,3 +31,46 @@ Test 2: One optimal subsequence is 8 6 4 2 1 (length 5).
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Maximum Partition
+
+You are given an array A of N integers (1-based indexing). You may split the array into any number K (K ≥ 1) of
+contiguous partitions so that together they cover the whole array in order.
+
+If the partition sums are P1, P2, …, PK, define the “special sum” of the partitioning as:
+    P1 − P2 + P3 − P4 + … + (−1)^(K−1) · PK
+(i.e., start with +, then alternate −, +, −, …).
+
+Task
+Choose a partitioning that maximizes the special sum and output that maximum value.
+
+Notes
+• Partitions must be contiguous and in order (no reordering of elements).
+• 1-based indexing is assumed in any explanation.
+
+Input Format
+• The first line contains an integer N.
+• The second line contains N space-separated integers A1, A2, …, AN.
+
+Output Format
+• Print a single integer: the maximum achievable special sum.
+
+Constraints
+• 1 ≤ N ≤ 10^5
+• −10^5 ≤ Ai ≤ 10^6  for all i in [1, N]
+
+Example
+Input
+5
+-1 -2 3 2 9
+
+Output
+9
+
+Explanation
+One optimal partitioning is: [−1] | [−2, 3] | [2, 9]
+Here, P1 = −1, P2 = (−2 + 3) = 1, P3 = (2 + 9) = 11
+Special sum = P1 − P2 + P3 = (−1) − 1 + 11 = 9
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
