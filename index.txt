@@ -91,3 +91,49 @@ coins = [1,2,3,4,5], T = 7
 Minimum houses = 2 (e.g., houses [3,4] → 3+4=7).
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Maximum Strength After One Segment Swap
+
+You are given two integer arrays A and B of equal length n. A superhero’s strength is 0 initially.
+He will finally pick exactly ONE of the two arrays (after an optional operation described below)
+and add up all elements of that chosen array — that total is his strength.
+
+Before choosing the array, he may perform AT MOST ONE operation:
+- Choose indices l and r (0 ≤ l ≤ r < n), and swap the subarray A[l..r] with B[l..r]
+  (i.e., for every i in [l, r], swap A[i] and B[i]).
+
+He can do this operation once or skip it. After that, he chooses either the resulting A or the
+resulting B and his strength is the sum of all elements in that chosen array.
+
+Task
+Return the maximum possible strength he can obtain.
+
+Input Format
+- Line 1: integer n — length of the arrays.
+- Line 2: n space-separated integers — A[0..n−1].
+- Line 3: n space-separated integers — B[0..n−1].
+
+Output Format
+- A single integer: the maximum total obtainable after at most one subarray swap and then
+  choosing the better of the two arrays.
+
+Constraints
+- 1 ≤ n ≤ 10^5
+- 1 ≤ A[i], B[i] ≤ 10^4
+- A and B have the same length.
+
+Sample Input
+5
+20 40 20 70 30
+50 20 50 40 20
+
+Sample Output
+220
+
+Explanation
+Swap the segment l=3, r=4 (0-based):
+A becomes [20, 40, 20, 40, 20]  → sum = 140
+B becomes [50, 20, 50, 70, 30]  → sum = 220
+Choose B; maximum strength = 220.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
