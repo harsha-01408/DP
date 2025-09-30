@@ -137,3 +137,42 @@ B becomes [50, 20, 50, 70, 30]  → sum = 220
 Choose B; maximum strength = 220.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Interleaving Subsequences Count
+
+Given three lowercase strings p, q, and r (length ≤ 100), count the number of ways to form
+exactly the string r by interleaving a subsequence of p and a subsequence of q, while
+preserving the relative order of characters taken from each string. You must use at least
+one character from p and at least one character from q. Return the answer modulo 1,000,000,007.
+
+Notes
+- “Subsequence” means you may skip characters but cannot reorder them.
+- The two chosen subsequences (one from p, one from q) are interleaved to form r.
+- At least one character must be taken from each of p and q.
+
+Input Format
+- Line 1: string p
+- Line 2: string q
+- Line 3: string r
+
+Output Format
+- A single integer: the number of valid interleavings modulo 1,000,000,007.
+
+Constraints
+- 1 ≤ |p|, |q|, |r| ≤ 100
+- All strings consist only of lowercase English letters.
+
+Sample
+p: ab
+q: ba
+r: aba
+
+Output:
+2
+
+Explanation:
+Two valid ways to form "aba":
+1) take "a" from p, then "ba" from q
+2) take "ab" from p, then "a" from q
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
