@@ -74,3 +74,20 @@ Special sum = P1 − P2 + P3 = (−1) − 1 + 11 = 9
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The Abandoned City
+
+You have N houses in a straight line; house i contains coins[i] (all positive).
+You may start at any house and walk only in one direction (left or right) without
+changing direction, stopping at any house. While walking, you collect coins from
+every house you pass (including start and stop).
+
+Find the **shortest distance** you must walk to collect **at least T coins**.
+(“Distance” = number of houses visited = length of that contiguous segment.)
+If it’s impossible (total coins < T), return -1.
+
+Example:
+coins = [1,2,3,4,5], T = 7
+Minimum houses = 2 (e.g., houses [3,4] → 3+4=7).
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
