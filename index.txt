@@ -353,3 +353,59 @@ Sample Output
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Maximum Nutrition with Coupons
+
+You have m units of money and n fruit varieties. For each fruit i (0 ≤ i < n):
+  price[i]      – its cost (integer)
+  nutrition[i]  – its nutrition value (integer)
+
+You also have k discount coupons. A coupon can be applied to at most one fruit
+and allows buying that fruit at half price (i.e., floor(price[i] / 2)).
+Each fruit can be bought at most once, and at most one coupon can be used per fruit.
+
+Task:
+Choose a subset of fruits to buy and decide which (up to k) of them use a
+coupon so that the total spent ≤ m and the sum of nutrition values is maximized.
+Return that maximum total nutrition.
+
+Input format
+- First line: integer m
+- Second line: integer n
+- Third line: n space-separated integers price[0..n-1]
+- Fourth line: n space-separated integers nutrition[0..n-1]
+- Fifth line: integer k
+
+Output format
+- One integer: the maximum total nutrition achievable within budget m.
+
+Constraints
+1 ≤ m ≤ 10^3
+1 ≤ n ≤ 500
+1 ≤ price[i], nutrition[i] ≤ 10^3
+0 ≤ k ≤ 10
+
+Example 1
+m = 4
+n = 3
+price      = [2, 4, 5]
+nutrition  = [20, 17, 15]
+k = 1
+Optimal: buy fruit with price 2 at full price and fruit with price 4 using a
+coupon (cost 2). Total cost = 2 + 2 = 4, total nutrition = 20 + 17 = 37.
+Answer: 37
+
+Example 2
+m = 10
+n = 2
+price      = [10, 20]
+nutrition  = [9, 10]
+k = 1
+Optimal: buy fruit 0 using a coupon (cost 5) and fruit 1 at full price (cost 10)
+is too expensive; best is buy fruit 0 at full price (10) → nutrition 9, or use
+coupon on fruit 1 (10) → nutrition 10. Maximum nutrition = 10.
+Answer: 10
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
