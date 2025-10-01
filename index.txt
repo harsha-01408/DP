@@ -320,3 +320,36 @@ Explanation: Matching subsequences are (), (2), (7).
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Construction Management (Paint House)
+
+You are given a row of n houses. Each house must be built using exactly one of
+three materials (A, B, or C). Adjacent houses may NOT use the same material.
+
+For each house i (1 ≤ i ≤ n) you are given three integers:
+  cost[i][0] = cost to build house i with material A
+  cost[i][1] = cost to build house i with material B
+  cost[i][2] = cost to build house i with material C
+
+Task:
+Choose a material for every house so that adjacent houses use different
+materials and the total cost is minimized. Return the minimum total cost.
+
+Input format
+- First line: integer n
+- Next n lines: three integers cost[i][0] cost[i][1] cost[i][2]
+
+Output format
+- One integer: the minimum total cost to build all houses.
+
+Sample Input
+3
+17 2 17
+16 16 5
+14 3 19
+
+Sample Output
+10
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
