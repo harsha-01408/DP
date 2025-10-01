@@ -409,3 +409,37 @@ Answer: 10
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Element Swapping
+
+Given an array arr of n integers, you may perform the following operation any number of times:
+1) Choose an index i (0 ≤ i < n − 1) and swap arr[i] and arr[i + 1].
+2) Each element can be swapped at most once during the whole process (i.e., no element participates in more than one swap).
+
+The strength of index i is defined as arr[i] × (i + 1), using 0-based indexing.
+
+Goal:
+Find the maximum possible value of
+    S = Σ_{i=0}^{n−1} arr[i] × (i + 1)
+after applying allowed swaps optimally. Return this maximum.
+
+Example
+n = 4
+arr = [2, 1, 4, 3]
+
+Optimal swaps:
+- swap(arr[2], arr[3])
+- swap(arr[0], arr[1])
+
+Final array: [1, 2, 3, 4]
+Sum of strengths: 1×1 + 2×2 + 3×3 + 4×4 = 30
+Return 30.
+
+Function Description
+Complete the function getMaximumSumOfStrengths with the parameter:
+    int arr[n]: the initial array
+Returns:
+    long int: the maximum possible sum of strengths of all indices after optimal swaps.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
