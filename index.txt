@@ -541,3 +541,54 @@ Output
 Explanation: All profits ≤ 0, so buy nothing.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Minimum Total Time at School with Skips
+
+You have a schedule for n days, each day having m hourly slots (0..m-1).
+The schedule is given as n binary strings of length m:
+- '1' means there is a lecture at that hour on that day.
+- '0' means no lecture.
+
+If on a given day you attend at least one lecture, your time spent at school that day
+equals (last_hour_attended - first_hour_attended + 1).
+If you attend no lecture that day, the time spent is 0.
+
+You may skip (i.e., delete) at most k lectures in total across all days
+(turn up to k '1's anywhere in the matrix into '0').
+
+Task
+Choose which lectures to skip so that the sum of daily times is minimized.
+Output that minimum total time.
+
+Input Format
+- First line: integer n — number of days.
+- Next n lines: a binary string of equal length m for each day (implicitly gives m).
+- Last line: integer k — total number of lectures you may skip.
+
+Output Format
+- One integer: the minimum possible total time after at most k skips.
+
+Constraints
+- 1 ≤ n, m, k ≤ 200
+- Each string consists only of '0' and '1'
+- All n strings have the same length m
+
+Example
+Input
+4
+0001
+0101
+0110
+0000
+3
+
+Output
+2
+
+Explanation
+Skip optimally: (day 0, hour 3), (day 1, hour 3), (day 2, hour 1).
+Then times per day become 0, 1, 1, 0 → total = 2.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
