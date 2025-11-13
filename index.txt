@@ -685,3 +685,76 @@ The sum of S[i][j] over all pairs in this team is 49.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+First subsequence
+
+You are given the following:
+
+• String A consisting of lowercase English letters.
+• String B consisting of lowercase English letters.
+
+You can change **at most one character** in string B, and this change
+**cannot** be applied to the first character of B.
+
+A string B is said to appear as a subsequence of A (under this rule) if you can:
+
+• Choose positions i1 < i2 < … < i|B| in A,
+• Such that A[i1] = B[0],
+• For all other positions k (2 ≤ k ≤ |B|), either A[ik] = B[k-1], or for at
+  most one of those positions A[ik] ≠ B[k-1] (this is where the single
+  allowed change in B is used),
+• And the relative order of characters of B in A is preserved.
+
+Task
+Determine the first (smallest) index in A (1-based) where such a subsequence
+match of B can start. If no such subsequence exists, output -1.
+
+Input format
+• The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10).
+For each test case:
+  – The first line contains string A (1 ≤ |A| ≤ 2000).
+  – The second line contains string B (1 ≤ |B| ≤ 2000).
+
+All strings consist only of lowercase English letters.
+
+Output format
+For each test case, print the answer on a new line: the first 1-based index in
+A where B occurs as a subsequence with at most one change allowed in B (not on
+its first character). If it is not possible, print -1.
+
+Examples
+
+Sample input
+2
+abcbc
+cba
+lhs
+rhs
+
+Sample output
+3
+-1
+
+Explanation
+Test case 1:
+A = "abcbc", B = "cba".
+The subsequences of A that can match B by changing at most 1 character are:
+A[3], A[4], A[5] → "cbc" (requires changing B[3] from 'a' to 'c').
+Thus the first occurrence starts at index 3. Answer: 3.
+
+Test case 2:
+A = "lhs", B = "rhs".
+You cannot change the first character of B ('r'), and there is no subsequence
+of A starting with 'r'. Hence it is impossible, so the answer is -1.
+
+Another example
+A = "daabe", B = "abe".
+Possible matching subsequences by changing at most 1 character:
+A[2], A[3], A[5] → "aae" (change B[2] from 'b' to 'a'),
+A[2], A[4], A[5] → "abe" (no change),
+A[3], A[4], A[5] → "abe" (no change).
+The earliest start index is 2, so the answer is 2.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
