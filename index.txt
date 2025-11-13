@@ -592,3 +592,33 @@ Then times per day become 0, 1, 1, 0 → total = 2.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Number of ways
+
+You are given the following:
+
+• An integer Z
+• An integer O
+• An integer K
+
+Task
+
+Determine the number of binary strings with exactly Z zeroes and O ones such that
+there are no K consecutive ones or zeroes in the string. As the number of strings
+can be large, print the answer modulo 10^9 + 7.
+
+Example
+
+Assumptions
+
+• Z = 2
+• O = 2
+• K = 2
+
+Approach
+
+In this example, there are two binary strings possible with exactly 2 zeroes and 2 ones
+such that there are no two consecutive ones or zeroes.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
