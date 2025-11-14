@@ -840,3 +840,30 @@ Constraints
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Harmonious Sequence – Minimum Removals
+
+A sequence is considered harmonious if it can be divided into a series of groups, where each group has the following structure:
+
+- The first element of the group is an integer k.
+- This is followed by exactly k elements (any integers).
+- After these k elements, a new group may start with its own leading integer, and so on.
+- The sequence must end exactly at the end of a group (no leftover elements).
+
+Examples:
+- The sequence [3, 7, 2, 6, 2, 4, 4] is harmonious because it can be split into:
+  [3, 7, 2, 6] and [2, 4, 4].
+- The sequence [1, 8, 4, 5, 2, 6, 1] is harmonious because it can be split into:
+  [1, 8] and [4, 5, 2, 6, 1].
+- The sequence [3, 2, 1] is not harmonious.
+- The empty sequence is considered harmonious.
+
+You are given a sequence of integers A of length N.
+
+In one operation, you may remove any single element from the sequence (from any position).
+
+Task:
+Determine the minimum number of operations (removals) required to make the sequence harmonious.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
