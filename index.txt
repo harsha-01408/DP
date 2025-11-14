@@ -867,3 +867,51 @@ Determine the minimum number of operations (removals) required to make the seque
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Forming Football Teams – Maximize Players
+
+There are n players in a football club. The rating of the i-th player is Pi.
+
+You are asked to form at most m teams with the following rule:
+
+- For every team you form, the absolute difference between the ratings of
+  any two players in that team must be at most 5.
+  (Equivalently, in each team: max_rating - min_rating ≤ 5.)
+
+Teams are independent of each other:
+- The rating differences between players belonging to different teams do NOT matter.
+- Each player can belong to at most one team.
+- Some players may be left unused.
+
+Your task:
+Choose some players and partition them into no more than m valid teams
+(satisfying the rating-difference condition) so that the total number of
+players used is as large as possible.
+
+Input:
+- The first line contains two integers n and m
+    n — number of players  (1 ≤ n ≤ 10^4)
+    m — maximum number of teams allowed (1 ≤ m ≤ 10^3, m ≤ n)
+- The second line contains n integers P1, P2, ..., Pn
+    Pi — rating of the i-th player (1 ≤ Pi ≤ 10^5)
+
+Output:
+- Print a single integer: the maximum possible total number of players
+  that can be picked to form no more than m teams.
+
+Example:
+Input:
+6 2
+33 5 8 20 17 3
+
+Output:
+5
+
+Explanation:
+Only 5 players can be used to form 2 valid teams.
+One optimal way:
+- Team 1: players with ratings 3, 5, 8 (max - min = 8 - 3 = 5 ≤ 5)
+- Team 2: players with ratings 17, 20 (max - min = 20 - 17 = 3 ≤ 5)
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
