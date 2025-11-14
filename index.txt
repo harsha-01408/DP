@@ -811,3 +811,32 @@ Alex picks the bolded items in ratings = [9, -1, -3, 4, 5] to get maximum rating
 9 + (-1) + 4 + 5 = 17.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+In one operation on an array of integers:
+
+• Choose any two adjacent elements.
+• Insert the sum of the adjacent pair in their place.
+
+Given an array of integers arr[n], perform this operation 0 or more times to create a non-decreasing array. Choose the operations to maximize the length of the resultant sorted array. Return that maximum length.
+
+Example
+n = 5
+arr = [2, 4, 1, 6, 12]
+
+Using 0-based indexing, choose arr[2] = 1 and arr[3] = 6. Replace the pair with their sum, 1 + 6 = 7, to yield [2, 4, 7, 12]. The array is non-decreasing and contains 4 elements. This is the longest result possible, so return 4.
+
+Function Description
+Complete the function optimalSumOperations in the editor below.
+
+optimalSumOperations has the following parameter:
+• int arr[n]: the array to sort
+
+Returns
+• int: the maximum length array one can obtain
+
+Constraints
+• 1 ≤ n ≤ 2 × 10^3
+• 1 ≤ arr[i] ≤ 10^9
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
