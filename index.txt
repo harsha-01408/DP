@@ -915,3 +915,44 @@ One optimal way:
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Special Subsets
+
+You are given an array a of size n.
+
+Consider any subset S of indices from {0, 1, ..., n-1}.
+Let T be the set of indices not chosen, i.e., T is the complement of S.
+
+Define:
+- sum(S) = sum of a[i] over all indices i in S.
+
+A subset S is called special if the following condition holds:
+For every index j in T:
+    sum(S) ≥ a[j].
+
+In other words, the total sum of the chosen elements must be at least as large as every single element that was not chosen.
+
+Your task is to count how many subsets S are special.
+
+Input:
+- The first line contains a single integer n — the size of the array.
+- The second line contains n integers a[0], a[1], ..., a[n-1].
+
+Output:
+- Print a single integer — the number of special subsets.
+
+Constraints:
+- 1 ≤ n
+- 0 ≤ a[i]   (adjust bounds as needed)
+
+Example:
+Input:
+4
+1 2 3 4
+
+Output:
+X   (X is the count of special subsets for this example)
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
