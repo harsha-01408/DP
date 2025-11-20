@@ -998,3 +998,46 @@ Output:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+
+You are given a garden represented by a binary string s, where:
+- '0' = rose
+- '1' = cosmos
+
+A flower shop sells two types of bouquets:
+
+- Type 1: one rose → revenue p
+- Type 2: one rose + one cosmos → revenue q
+
+Bouquets must be formed using consecutive flowers in the string.
+
+- A Type-1 bouquet uses a single '0'.
+- A Type-2 bouquet uses a substring "01" or "10" (any consecutive rose–cosmos pair).
+
+You may choose any disjoint consecutive segments of the string.  
+Each flower can be used in at most one bouquet.  
+You do not have to use all flowers.
+
+Your task is to maximize the total revenue from the bouquets you form and
+return (or print) this maximum revenue.
+
+Constraints
+1 ≤ p, q ≤ 1000
+1 ≤ |s| ≤ 10^5
+
+Input
+The first line contains two integers p and q.
+The second line contains the binary string s.
+
+Output
+Print a single integer – the maximum total revenue.
+
+Example
+Input
+2 3
+00101000
+
+Output
+5
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
