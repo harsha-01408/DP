@@ -954,5 +954,47 @@ Input:
 Output:
 X   (X is the count of special subsets for this example)
 
+------------------------------------------------------------
+
+Follow-up 1: Sum of Subset Sums over Special Subsets
+
+Keep the same definitions of a, S, T, and special subsets as in Problem 1.
+
+Instead of just counting how many subsets S are special, you must now compute:
+    F1 = Σ sum(S)
+over all special subsets S.
+
+That is, for every special subset S, take sum(S), and then sum these values over all such S.
+
+Input:
+- Same as Problem 1.
+
+Output:
+- Print a single integer:
+    F1 = sum of sum(S) over all special subsets S.
+
+
+------------------------------------------------------------
+Follow-up 2: Sum of Subset Products over Special Subsets
+
+Again, keep the same definitions of a, S, T, and special subsets as in Problem 1.
+
+Define:
+- prod(S) = product of a[i] over all indices i in S.
+- By convention, for the empty subset ∅, define prod(∅) = 1.
+
+Now you must compute:
+    F2 = Σ prod(S)
+over all special subsets S.
+
+That is, for every special subset S, take prod(S), and then sum these values over all such S.
+
+Input:
+- Same as Problem 1.
+
+Output:
+- Print a single integer:
+    F2 = sum of prod(S) over all special subsets S.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
