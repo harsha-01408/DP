@@ -1072,3 +1072,167 @@ The maximum subarray sum is 10 + 1 + 10 = 21.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Maximum Subarray Sum with One Boost
+
+Given two arrays a and b of n integers each. You can update at most 
+one element by setting a[i] = a[i] + b[i]. Find the maximum sum of a 
+contiguous subarray after performing this operation (or not performing it).
+
+Input:
+- First line: integer n (1 ≤ n ≤ 10^5)
+- Second line: n integers a[1], a[2], ..., a[n] (-10^9 ≤ a[i] ≤ 10^9)
+- Third line: n integers b[1], b[2], ..., b[n] (-10^9 ≤ b[i] ≤ 10^9)
+
+Output:
+- Single integer: maximum subarray sum
+
+Example:
+Input:
+3
+5 -10 5
+0 20 0
+
+Output:
+20
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Maximum Subarray Sum with Unlimited Boosts
+
+Given two arrays a and b of n integers each. For each index i, you can 
+independently choose to update a[i] = a[i] + b[i] or leave it unchanged.
+Find the maximum sum of a contiguous subarray after performing any 
+number of such operations.
+
+Input:
+- First line: integer n (1 ≤ n ≤ 10^5)
+- Second line: n integers a[1], a[2], ..., a[n] (-10^9 ≤ a[i] ≤ 10^9)
+- Third line: n integers b[1], b[2], ..., b[n] (-10^9 ≤ b[i] ≤ 10^9)
+
+Output:
+- Single integer: maximum subarray sum
+
+Example:
+Input:
+3
+5 -10 5
+0 20 -3
+
+Output:
+20
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Maximum Subarray Sum with K Boosts
+
+Given two arrays a and b of n integers each. You can update at most k 
+elements by setting a[i] = a[i] + b[i] (each index can be chosen at 
+most once). Find the maximum sum of a contiguous subarray.
+
+Input:
+- First line: integers n, k (1 ≤ n ≤ 10^5, 0 ≤ k ≤ n)
+- Second line: n integers a[1], a[2], ..., a[n] (-10^9 ≤ a[i] ≤ 10^9)
+- Third line: n integers b[1], b[2], ..., b[n] (-10^9 ≤ b[i] ≤ 10^9)
+
+Output:
+- Single integer: maximum subarray sum
+
+Example 1:
+Input:
+5 2
+5 -10 5 -10 5
+0 20 0 20 0
+
+Output:
+35
+
+Explanation: Boost a[1] and a[3] to get [5, 10, 5, 10, 5]. 
+             Maximum subarray sum = 5 + 10 + 5 + 10 + 5 = 35.
+
+Example 2:
+Input:
+3 1
+10 -100 10
+1 1 1
+
+Output:
+21
+
+Explanation: Boost a[1] to get [10, -99, 10]. 
+             Maximum subarray sum = 21? No wait...
+             Actually boost a[1]: -100 + 1 = -99, still bad.
+             Better: just take subarray [10] or [10], ans = 10.
+             
+             Hmm, let's reconsider with replacement version:
+             If it's a[i] = b[i] (replace), then [10, 1, 10] → 21.
+
+Example 3:
+Input:
+4 2
+-5 -5 -5 -5
+10 10 10 10
+
+Output:
+10
+
+Explanation: Boost a[0] and a[1] to get [5, 5, -5, -5].
+             Maximum subarray sum = 5 + 5 = 10.
+
+Constraints:
+- 1 ≤ n ≤ 10^5
+- 0 ≤ k ≤ n
+- -10^9 ≤ a[i], b[i] ≤ 10^9
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Maximum Subarray Sum with K Replacements
+
+Given two arrays a and b of n integers each. You can replace at most k 
+elements by setting a[i] = b[i] (each index can be chosen at most once). 
+Find the maximum sum of a contiguous subarray.
+
+Input:
+- First line: integers n, k (1 ≤ n ≤ 10^5, 0 ≤ k ≤ n)
+- Second line: n integers a[1], a[2], ..., a[n] (-10^9 ≤ a[i] ≤ 10^9)
+- Third line: n integers b[1], b[2], ..., b[n] (-10^9 ≤ b[i] ≤ 10^9)
+
+Output:
+- Single integer: maximum subarray sum
+
+Example 1:
+Input:
+5 2
+5 -10 5 -10 5
+0 20 0 20 0
+
+Output:
+45
+
+Explanation: Replace a[1]=20, a[3]=20 to get [5, 20, 5, 20, 5].
+             Maximum subarray sum = 55.
+
+Example 2:
+Input:
+3 1
+10 -100 10
+1 1 1
+
+Output:
+21
+
+Explanation: Replace a[1]=1 to get [10, 1, 10].
+             Maximum subarray sum = 10 + 1 + 10 = 21.
+
+Constraints:
+- 1 ≤ n ≤ 10^5
+- 0 ≤ k ≤ n
+- -10^9 ≤ a[i], b[i] ≤ 10^9
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
