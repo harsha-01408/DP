@@ -1041,3 +1041,34 @@ Output
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Maximum Subarray Sum with One Replacement
+
+Given two arrays a and b of n integers, you can replace at most one 
+element a[i] with b[i]. Find the maximum sum of a contiguous subarray 
+after performing this operation (or not performing it).
+
+Input:
+- First line: integer n (1 ≤ n ≤ 10^5)
+- Second line: n integers a[1], a[2], ..., a[n]
+- Third line: n integers b[1], b[2], ..., b[n]
+
+Output:
+- Single integer: maximum subarray sum
+
+Example:
+Input:
+3
+10 -100 10
+1 1 1
+
+Output:
+21
+
+Explanation:
+Replace a[2]=-100 with b[2]=1, giving array [10, 1, 10].
+The maximum subarray sum is 10 + 1 + 10 = 21.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
