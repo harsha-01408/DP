@@ -1236,3 +1236,25 @@ Constraints:
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an array gems of integers representing the values of gems in a row, and three integers p, q, r.
+You can remove up to p single gems, up to q pairs of consecutive gems, and up to r triplets of consecutive gems. The removals are of disjoint consecutive segments in the original array.
+The goal is to minimize the sum of the remaining gems after performing the removals.
+Example 1:
+Input: gems = [8,5,4,2,0,7,-8,-100,1], p = 1, q = 1, r = 1
+Output: -107
+Explanation: One possible way:
+
+Remove single gem 8.
+Remove pair [5,4].
+Remove triplet [2,0,7].
+Remaining: [-8,-100,1], sum = -107.
+
+Constraints:
+
+1 <= gems.length <= 100
+0 <= p, q, r <= 10
+gems[i] is an integer (can be positive, negative, or zero).
+The total gems removed (p + 2q + 3r) <= gems.length.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
