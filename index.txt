@@ -1372,3 +1372,31 @@ total extra time = extraTime("aa") + partitionTime + extraTime("a")
                 = 10
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The Christmas Gift
+
+You are given N ingredients. Each ingredient i has a taste score ai (1..10).
+CodeChef will make ONE dish for EVERY subset of these N ingredients (including the empty subset).
+
+For any subset D (the ingredients included in the dish):
+- Planet A pays: (sum of scores in D) - (sum of scores NOT in D)
+- Planet B pays: (sum of scores NOT in D) - (sum of scores in D)
+
+Each dish (subset) must be sent to exactly ONE planet (A or B), not both.
+
+Goal:
+Choose, for every subset, whether to send it to Planet A or Planet B, to maximize the total money earned
+over all 2^N dishes.
+
+Output the maximum total money modulo 10^7 for each test case.
+
+Input:
+T test cases.
+For each test case:
+- N
+- N integers a1..aN (taste scores)
+
+Output:
+For each test case, print the maximum total modulo 10^7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
