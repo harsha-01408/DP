@@ -1292,3 +1292,83 @@ Constraints (from screenshot):
 - 1 ≤ K ≤ 1e5
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+New Network Protocol
+
+A string must be transferred using a custom network protocol.
+The protocol processes the string as follows:
+
+• Each pair of characters in the string is processed together.
+• If any pair contains matching characters (e.g., "aa"), it requires an additional sameTime seconds.
+• The string can be split into substrings before transmission, with each partition adding partitionTime seconds.
+
+Calculate the minimum possible total extra time required, which is the sum of:
+• Time for processing pairs with matching characters.
+• Time for creating partitions.
+
+Example
+s = "abcabcc"
+sameTime = 1
+partitionTime = 4
+
+Two optimal approaches are:
+1. Split into ["abc", "abcc"]
+   - "abc" has no matching pairs: 0 seconds
+   - One partition: 4 seconds
+   - "abcc" has one "cc" pair: 1 second
+   - Total: 0 + 4 + 1 = 5 seconds
+2. Keep s ["abcabcc"]
+   - 5 matching pairs ("ab", "bc", "ca", "ab", "bc", "cc"): 5 seconds
+   - Total: 5 seconds
+
+The minimum possible extra time is 5 seconds.
+
+Function Description
+Complete the function getMinimumTime in the editor with the following parameters:
+• string s: the string to transfer
+• int sameTime: the extra time taken to process a pair of matching characters
+• int partitionTime: the extra time to partition a string
+
+Returns
+• int: the minimum possible total extra time to transfer the string s over the network
+
+Constraints
+• 1 ≤ length of s ≤ 2500
+• 1 ≤ sameTime, partitionTime ≤ 10^5
+
+Input Format for Custom Testing
+The first line contains an integer sameTime.
+The second line contains an integer partitionTime.
+The third line contains a string s.
+
+Sample Case 0
+Sample Input 0
+5
+1
+abbaa
+
+Sample Output 0
+2
+
+Explanation
+An optimal partition: ["ab", "ba", "a"]
+total extra time = extraTime("ab") + partitionTime + extraTime("ba") + partitionTime + extraTime("a")
+                = 0 + 1 + 0 + 1 + 0
+                = 2
+
+Sample Case 1
+Sample Input 1
+5
+5
+aaa
+
+Sample Output 1
+10
+
+Explanation
+An optimal partition: ["aa", "a"]
+total extra time = extraTime("aa") + partitionTime + extraTime("a")
+                = 5 + 5 + 0
+                = 10
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
