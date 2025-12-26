@@ -1258,3 +1258,37 @@ gems[i] is an integer (can be positive, negative, or zero).
 The total gems removed (p + 2q + 3r) <= gems.length.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem -
+
+You have N power sockets numbered 1..N. You start at socket 1 and want to reach socket N.
+
+For each socket i (1 ≤ i ≤ N), four boolean arrays A, B, C, D describe which actions are allowed from socket i:
+
+- If A[i] = 1: you may stay at the same socket i (i -> i).
+- If B[i] = 1: you may move from socket i to socket i+1 (i -> i+1), if i+1 ≤ N.
+- If C[i] = 1: you may move from socket i to socket i+2 (i -> i+2), if i+2 ≤ N.
+- If D[i] = 1: you may jump back to socket 1 (i -> 1).
+
+Not all sockets support all actions (arrays can differ per i).
+
+Task:
+Count the total number of distinct ways to direct power from socket 1 to socket N using exactly K sockets/steps (i.e., exactly K moves/transitions).
+Since the answer can be large, return it modulo 998244353.
+
+Input format:
+- First line: integer N (number of sockets/nodes)
+- Second line: integer K (number of steps)
+- Next N lines: A[1..N] (each line is 0 or 1)
+- Next N lines: B[1..N]
+- Next N lines: C[1..N]
+- Next N lines: D[1..N]
+
+Output:
+- One integer: number of valid paths from 1 to N in exactly K steps, modulo 998244353.
+
+Constraints (from screenshot):
+- 1 ≤ N ≤ 1e5
+- 1 ≤ K ≤ 1e5
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
