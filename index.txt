@@ -1400,3 +1400,29 @@ Output:
 For each test case, print the maximum total modulo 10^7.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+You have n cities in a line.
+
+population[i] = how many people live in city i (1-based).
+
+unit[i] is a binary string:
+
+'1' means city i currently has a security unit,
+
+'0' means it doesn’t.
+
+You may move any security unit at city i > 1 one step left to city i-1.
+
+Each unit can be moved at most once.
+
+If you move it, city i loses the unit and city i-1 gains it.
+
+A unit in city 1 cannot move.
+
+After you finish moving units, a city is protected if it has at least one unit.
+
+Goal: choose which units (if any) to move so that the sum of populations in protected cities is as large as possible.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
