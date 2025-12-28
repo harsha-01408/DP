@@ -1426,3 +1426,45 @@ Goal: choose which units (if any) to move so that the sum of populations in prot
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Palindrome Triplets
+
+Problem
+You are given a lowercase string S of length n.
+
+A "good triplet" is a choice of three substrings of S such that:
+- Each chosen substring is a palindrome, and
+- The three substrings do not overlap and appear from left to right.
+
+More formally, choose three index pairs:
+P1(i1, j1), P2(i2, j2), P3(i3, j3)
+such that:
+0 <= i1 <= j1 < i2 <= j2 < i3 <= j3 < n
+and the substrings:
+S[i1..j1], S[i2..j2], S[i3..j3]
+are all palindromes.
+
+Task
+For each test case, compute how many good triplets exist.
+
+Notes
+- 0-based indexing is used.
+- A substring is a contiguous part of the string.
+- A palindrome reads the same forward and backward.
+
+Input Format
+- The first line contains an integer T (number of test cases).
+- For each test case:
+  - The first line contains an integer n.
+  - The second line contains the string S.
+
+Output Format
+For each test case, print a single integer: the number of good triplets.
+
+Constraints
+1 <= T <= 5
+1 <= n <= 10^3
+S contains only lowercase English letters.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
