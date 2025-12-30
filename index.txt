@@ -1468,3 +1468,21 @@ S contains only lowercase English letters.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given three integers AA, AB and BB. These represent the number of blocks you have:
+- "AA" (AA copies),
+- "AB" (AB copies),
+- "BB" (BB copies).
+
+You may concatenate some or all of these blocks (each block can be used at most as many times as available)
+to build a string.
+
+The resulting string must NOT contain the substring "AAA" and must NOT contain the substring "BBB".
+
+Write a function:
+  string solution(int AA, int AB, int BB)
+that returns any string of maximum possible length that can be built under these rules.
+If multiple maximum-length strings exist, you may return any of them.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
