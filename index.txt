@@ -1486,3 +1486,20 @@ If multiple maximum-length strings exist, you may return any of them.
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an array arr of length n containing positive integers.
+
+A partition splits the array into one or more contiguous, non-empty subsegments that together cover
+the entire array (each element belongs to exactly one subsegment).
+
+For any partition, compute the sum of each subsegment in left-to-right order, producing a sequence
+of sums. The partition is considered valid if the parity of these sums alternates, i.e., every pair
+of adjacent subsegment sums has different parity (one is even and the other is odd).
+
+Two partitions are different if there exists at least one array element that belongs to a different
+subsegment in the two partitions.
+
+Return the number of valid partitions of arr, modulo 10^9 + 7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
