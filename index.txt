@@ -1527,4 +1527,21 @@ Output the maximum total earnings.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+You are given an array A of length N and an integer X.
+
+Define the cost of an array as the sum of its elements.
+
+You may perform the following operation any number of times:
+- Choose any contiguous subarray of the current array whose element-sum is
+  divisible by X, and delete that entire subarray.
+
+After deletions, the remaining elements join together to form a shorter array.
+
+Your task is to minimize the final cost (sum of the remaining elements) after
+performing zero or more valid deletions.
+
+Because the answer can be large, output it modulo 10^9 + 7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 
