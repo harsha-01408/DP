@@ -1503,3 +1503,28 @@ Return the number of valid partitions of arr, modulo 10^9 + 7.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+You are given several delivery requests along a straight road.
+
+Each request i has:
+- a pickup position start[i]
+- a drop-off position end[i]
+- an extra reward premium[i]
+
+When a request is completed, the courier earns:
+(end[i] − start[i]) units for the distance traveled
+plus premium[i] units as a bonus.
+
+Rules:
+- The courier can deliver only one package at a time.
+- The courier always moves forward and never travels backward.
+- While delivering a package from start[i] to end[i], the courier cannot start
+  or finish any other delivery whose location lies within that interval.
+
+Choose a set of delivery requests that can be completed without violating these
+rules and that yields the maximum possible total earnings.
+
+Output the maximum total earnings.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
