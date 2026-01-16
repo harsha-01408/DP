@@ -1544,4 +1544,30 @@ Because the answer can be large, output it modulo 10^9 + 7.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Time Limit: 2 sec / Memory Limit: 1024 MiB
+
+Let N be a positive integer.  
+You are given a string s of length N−1 consisting only of the characters '<' and '>'.
+
+Find the number of permutations (p1, p2, …, pN) of the numbers (1, 2, …, N) that satisfy the following condition:
+
+For each i (1 ≤ i ≤ N−1):
+- pi < p(i+1) if the i-th character of s is '<'
+- pi > p(i+1) if the i-th character of s is '>'
+
+Since the answer can be large, output it modulo 10^9 + 7.
+
+Constraints:
+- 2 ≤ N ≤ 3000
+- s is a string of length N−1
+- s consists only of '<' and '>'
+
+Input:
+N  
+s
+
+Output:
+Print the number of valid permutations modulo 10^9 + 7.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
