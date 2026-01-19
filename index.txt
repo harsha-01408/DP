@@ -1627,3 +1627,26 @@ Sample Output 4:
 295
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an array A of N integers.
+You must split the array into exactly K non-empty contiguous segments.
+
+For each segment:
+- Let S be the sum of the elements in the segment.
+- Let L be the number of elements in the segment.
+- The cost of the segment is | S − L × D |.
+
+The total cost of a partition is the sum of the costs of all K segments.
+
+Your task is to find the minimum possible total cost over all valid partitions.
+
+Input:
+N
+K
+D
+A1 A2 ... AN
+
+Output:
+The minimum total cost.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
