@@ -1711,3 +1711,42 @@ Constraints
 • 1 ≤ n
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Statement
+
+You are given a grid of integers with n rows and m columns. Rows are numbered from top
+to bottom and columns from left to right.
+
+In one operation, you may choose any element in the grid and divide it by a positive
+integer d. The cost of this operation is d. You may perform any number of operations on
+any element.
+
+A path from cell (1, 1) to cell (n, m) is formed by moving only right or down. A path is
+called valid if all the numbers on that path are nice.
+
+An integer is called nice if the total number of its divisors is equal to
+2^(number of its distinct prime divisors).
+
+For example:
+3, 6, and 7 are nice integers,
+while 8, 9, and 12 are not nice integers.
+
+Your task is to find the minimum total cost of operations required to make at least one
+valid path in the grid.
+
+
+Input Format
+
+The first line contains an integer n, the number of rows.
+The second line contains an integer m, the number of columns.
+The next n lines each contain m space-separated integers describing the grid.
+
+
+Constraints
+
+1 ≤ n ≤ 100
+1 ≤ m ≤ 100
+1 ≤ a[i][j] ≤ 10^9
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
