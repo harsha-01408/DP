@@ -1650,3 +1650,35 @@ Output:
 The minimum total cost.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Statement
+
+You are given an array A of size N. The cost of the array is defined as the sum of its elements.
+
+You may perform the following operation any number of times:
+- Delete any contiguous subarray whose sum is divisible by X.
+
+Your task is to find the minimum possible cost of the array after performing the operation optimally.
+Since the result can be large, return the answer modulo 10^9 + 7.
+
+Input Format
+- The first line contains an integer N, the number of elements in the array.
+- The second line contains an integer X, the given divisor.
+- The next N lines each contain one integer representing A[i].
+
+Constraints
+- 1 ≤ N ≤ 10^5
+- 1 ≤ X ≤ 10^6
+- 1 ≤ A[i] ≤ 10^6
+
+Sample Input
+2
+2
+1
+1
+
+Sample Output
+0
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
