@@ -1750,3 +1750,36 @@ Constraints
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Problem Statement
+
+You are given a string s of length n.
+
+In one operation, you may:
+- remove one character from the string, and
+- insert it at any position in the string.
+
+Your goal is to make all equal characters contiguous, meaning:
+- each distinct character must appear in exactly one continuous block,
+- the order of these blocks can be chosen arbitrarily.
+
+Example:
+  s = "abac"
+  Valid target forms include: "aabc", "bbccaa", etc.
+  (same multiset of characters, one block per letter)
+
+Task:
+Find the minimum number of operations required to transform s
+into such a valid string.
+
+Notes:
+- The final string must contain the same characters with the same frequencies.
+- Moving a character counts as exactly one operation.
+
+Constraints:
+- n can be large
+- number of distinct characters ≤ 10
+
+Output:
+- a single integer: the minimum number of operations needed
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
