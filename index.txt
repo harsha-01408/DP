@@ -1682,3 +1682,32 @@ Sample Output
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+Problem Statement
+
+You are given a connected tree consisting of n nodes.
+
+A tree is called a Hamilton Tree if there exists a single simple path
+that visits all n nodes exactly once.
+
+You may perform the following operation any number of times:
+
+• Remove any one edge from the tree, which splits it into two components.
+• Add a new edge between any node from the first component and any node
+  from the second component, restoring the tree structure.
+
+Determine the minimum number of such operations required to convert
+the given tree into a Hamilton Tree.
+
+Input Format
+• An integer n — the number of nodes.
+• n−1 lines follow, each containing two integers u and v
+  representing an edge between nodes u and v.
+
+Output Format
+• Output a single integer — the minimum number of operations needed.
+
+Constraints
+• The graph is initially a tree.
+• 1 ≤ n
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
