@@ -1783,3 +1783,42 @@ Output:
 - a single integer: the minimum number of operations needed
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Hacker's Team
+
+A cybersecurity firm is forming a team by selecting hackers from two groups,
+Team A and Team B. Both teams have the same number of hackers, and the skill
+levels are given in two arrays, team_a and team_b.
+
+At each position i, exactly one hacker can be chosen — either from Team A or
+from Team B.
+
+A team is considered strong if the selected skill levels form a
+non-decreasing sequence.
+
+Your task is to find the maximum length of a contiguous subarray [l..r]
+such that it is possible to choose one hacker from either team_a or team_b
+at each index in this range, and the resulting sequence of skills is
+non-decreasing.
+
+Function to implement:
+getMaxSubarrayLen(team_a, team_b)
+
+Inputs:
+- team_a (int[]): skill levels of Team A
+- team_b (int[]): skill levels of Team B
+
+Output:
+- int: the maximum length of a subarray that can form a strong team
+
+Example:
+team_a = [5, 2, 4, 1]
+team_b = [3, 6, 2, 2]
+
+One possible selection for indices [1..3]:
+Choose [2, 2, 2], which is non-decreasing.
+
+Result:
+3
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
