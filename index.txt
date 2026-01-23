@@ -1822,3 +1822,34 @@ Result:
 3
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Description
+
+You are given an array `blocks`, where each element represents the performance
+score of a data block.
+
+You are also given:
+- numZones: the exact number of contiguous zones to divide the array into
+- queryLimit: for each zone, only the largest `queryLimit` values contribute
+  to that zone’s score
+
+Rules for splitting:
+- The array must be split into exactly `numZones` zones
+- Each zone must be a contiguous subarray
+- Zones must not overlap
+- Every element must belong to exactly one zone
+- Zones must preserve the original order of the array
+
+Scoring:
+- For each zone:
+  - Select the `queryLimit` largest values in that zone
+  - Sum them to get the zone’s score
+- The total system performance is the sum of all zone scores
+
+Goal:
+Determine how to split the array into `numZones` contiguous zones such that
+the total system performance is maximized.
+
+Return the maximum possible total score.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
