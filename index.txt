@@ -1915,3 +1915,41 @@ Constraints (typical, not given):
 Values of S[i], P[i] usually fit in 32-bit int, but use long long for sums.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+You have n particles arranged in a line, indexed from 0 to n-1.  
+Each particle has an intensity value I[i].
+
+When you decide to pick particle i, it generates a trail value:  
+trail_i = I[i] % (i + 3)
+
+After picking particle i, any later particle j (j > i) becomes unstable  
+and cannot be picked if the following condition is true:
+
+((I[j] XOR I[i]) % 6) == trail_i
+
+You process the particles strictly from left to right (index 0 to n-1).  
+For each particle, if it is not yet unstable, you may either:  
+- pick it, or  
+- skip it.
+
+Once a particle becomes unstable (due to any previously picked particle),  
+you cannot pick it when you reach its position.
+
+The order of picked particles must be strictly increasing (preserves left-to-right order).
+
+Goal:  
+Find the maximum number of particles you can pick without violating the instability rules.
+
+Output:  
+A single integer — the size of the largest possible set of particles you can select.
+
+Input format (standard assumption):  
+First line: integer n  
+Second line: n integers I[0] I[1] ... I[n-1]
+
+Typical constraints:  
+1 ≤ n ≤ 5000  
+I[i] are non-negative integers (usually fit in 32-bit signed int)
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
