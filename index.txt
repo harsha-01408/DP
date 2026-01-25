@@ -1878,3 +1878,40 @@ of chosen beacons is as large as possible.
 Output the maximum number of beacons you can choose.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given a line of n beads. Each bead has two integer values:
+
+- strength S[i]
+- preservation P[i]
+
+You must split the entire line into one or more contiguous segments (chains).  
+Every bead must be used exactly once.
+
+A segment from index L to R (0-based, inclusive) is valid only if BOTH:
+
+1. (max_strength - min_strength)^2 < sum of preservation values in the segment  
+   i.e. (max(S[L..R]) - min(S[L..R]))² < sum(P[L..R])
+
+2. The number of beads in the segment where P[i] < S[i] is even  
+   (count of such beads in [L..R] % 2 == 0)
+
+The value/profit of one valid segment [L..R] is:  
+sum(S[L..R]) - max(P[L..R])
+
+Goal:  
+Find a partition of the entire array into contiguous valid segments  
+that maximizes the sum of their values (total profit).
+
+Output:  
+The maximum possible total value (a single integer).
+
+Input format (assumed):  
+First line: n  
+Second line: n integers S[0] S[1] ... S[n-1]  
+Third line: n integers P[0] P[1] ... P[n-1]
+
+Constraints (typical, not given):  
+1 ≤ n ≤ 5000 (for O(n²) DP to pass)  
+Values of S[i], P[i] usually fit in 32-bit int, but use long long for sums.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
