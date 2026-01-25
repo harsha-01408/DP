@@ -1853,3 +1853,28 @@ the total system performance is maximized.
 Return the maximum possible total score.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an array B of beacon intensities.
+
+You move from left to right and choose some beacons.
+You do not need to choose consecutive beacons, but the order must be kept.
+
+You start in Phase A.
+After each chosen beacon, the phase switches between A and B.
+
+If you choose a beacon with value x:
+
+Phase A:
+You cannot choose any later beacon whose value is
+strictly greater than x and strictly less than 2x.
+
+Phase B:
+You cannot choose any later beacon whose value is
+strictly greater than x/2 and strictly less than x.
+
+Your goal is to choose beacons so that the total number
+of chosen beacons is as large as possible.
+
+Output the maximum number of beacons you can choose.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
