@@ -1953,3 +1953,17 @@ Typical constraints:
 I[i] are non-negative integers (usually fit in 32-bit signed int)
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given a weighted, undirected road graph with nodes 1..N and edges (u, v, w).
+
+There are M companies. Company i owns a set of nodes (locations). If you choose (contract) a company,
+you must place drop-off centers at all nodes owned by that company.
+
+Given a minimum distance D, a subset of companies is valid if for every pair of drop-off centers
+created by the chosen companies, the shortest-path distance between their nodes in the road graph
+is at least D.
+
+Count how many subsets of companies are valid (including the empty subset unless stated otherwise).
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
