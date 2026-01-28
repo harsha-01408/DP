@@ -2015,3 +2015,53 @@ Your task is to compute the minimum total delay required to reach server n
 from server 0.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem Description
+
+You are given a network of nodes labeled 0..N, where node 0 is a gateway.
+
+There are two types of undirected edges:
+
+1) Ring edges  
+   For nodes 1..N, there is a cycle:
+   - Edge between node i and node i+1 for i = 1..N-1
+   - Edge between node N and node 1  
+   Removing the ring edge (i, i+1) has cost ring[i]
+   (ring[N] is the cost for edge (N,1))
+
+2) Gateway edges  
+   For each node i = 1..N, there is an edge between node 0 and node i  
+   Removing edge (0, i) has cost gateway[i]
+
+You may remove (disable) any edges, paying their respective costs.
+
+Your goal is to remove a set of edges with minimum total cost such that
+the remaining graph can be divided into exactly two security groups
+(i.e., the graph is bipartite).
+
+Equivalently:
+- Each node must be assigned one of two colors.
+- Every remaining edge must connect nodes of different colors.
+- Any edge connecting two nodes of the same color must be removed.
+
+Input
+-----
+N
+ring[1..N]
+gateway[1..N]
+
+Output
+------
+The minimum total cost of edges that must be removed so that the
+remaining graph is bipartite.
+
+Notes
+-----
+- Node 0 is the gateway.
+- ring[i] is the cost to remove edge (i, i+1) for i < N,
+  and ring[N] is the cost to remove edge (N,1).
+- gateway[i] is the cost to remove edge (0,i).
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
