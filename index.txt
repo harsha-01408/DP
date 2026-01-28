@@ -1967,3 +1967,35 @@ Count how many subsets of companies are valid (including the empty subset unless
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+You are playing a game with n bosses arranged in a fixed order from 1 to n.  
+You must defeat the bosses strictly in this order.
+
+The i-th boss deals damage a[i] to you.
+
+You have a special ability that can be activated at most k times.
+
+When the special ability is active:
+- You become a SuperHero.
+- You take NO damage from any boss while fighting under this activation.
+
+Once activated, the ability remains active across consecutive boss fights, but it automatically deactivates if the following condition becomes true:
+
+- The GCD (Greatest Common Divisor) of the damage values a[i] of all bosses defeated during the current activation becomes equal to 1.
+
+The ability deactivates only AFTER the boss that causes the GCD to become 1 is defeated.
+Damage is still zero for that boss.
+
+After deactivation, you may activate the ability again if you still have remaining activations.
+
+Your task is to determine the minimum total damage you will take after defeating all n bosses, using the special ability at most k times.
+
+Input:
+- An integer n, the number of bosses.
+- An integer k, the maximum number of times the special ability can be activated.
+- An array a of length n, where a[i] is the damage dealt by the i-th boss.
+
+Output:
+- A single integer representing the minimum total damage taken.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
