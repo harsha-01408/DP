@@ -1999,3 +1999,19 @@ Output:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+You are given n servers arranged in a sequence, numbered from 1 to n.
+Data upload starts from a central server labeled 0 and must reach server n.
+
+Each server i (1 ≤ i ≤ n) introduces a delay of delay[i] units when the data
+packet is processed at that server.
+
+From any server i, the data packet can be transmitted forward to any server
+j such that i < j ≤ i + k (at most k servers ahead).
+
+The delay of a server is added only when the packet reaches that server.
+Assume delay[0] = 0.
+
+Your task is to compute the minimum total delay required to reach server n
+from server 0.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
