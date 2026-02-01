@@ -2065,3 +2065,21 @@ Notes
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You have a list of numbers.
+
+You will repeat the following until the list is empty:
+- On the 1st move, add the sum of the current list to your score.
+- On the 2nd move, subtract the sum of the current list from your score.
+- On the 3rd move, add the sum again.
+- On the 4th move, subtract again.
+  (so it keeps alternating +, −, +, −)
+
+After each move, you must delete exactly one number,
+either from the left end or the right end of the list.
+
+You are free to choose which end to delete from each time.
+
+Your goal is to make choices so that the final score is as large as possible.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
