@@ -2083,3 +2083,63 @@ You are free to choose which end to delete from each time.
 Your goal is to make choices so that the final score is as large as possible.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+## Lonely Pieces
+
+You have an N × M grid (board) and an infinite supply of identical pieces.
+
+You may place any number of pieces (including zero) on the grid cells.
+
+A piece is considered **lonely** if **none** of its four possible adjacent cells (up, down, left, right) contains another piece.  
+(Positions outside the board are considered empty.)
+
+Your task is to count the number of ways to place pieces such that **no piece is lonely**.  
+In other words: every placed piece must have **at least one** adjacent piece (sharing an edge).
+
+The empty placement (0 pieces) is always valid.
+
+Since the answer can be very large, output it modulo P.
+
+Input:
+First line: integer N (rows)  
+Second line: integer M (columns)  
+Third line: integer P (modulo)
+
+Output:
+Single integer — number of valid placements modulo P
+
+Constraints:
+1 ≤ N ≤ 100  
+1 ≤ M ≤ 9  
+1 ≤ P ≤ 10⁹ + 7
+
+Examples:
+
+Input:
+2
+1
+3
+
+Output:
+2  
+(Explanation: empty board or both cells filled — 2 ways; 2 mod 3 = 2)
+
+Input:
+2
+2
+6
+
+Output:
+4  
+(10 valid configurations, 10 mod 6 = 4)
+
+Input:
+1
+1
+1000000007
+
+Output:
+1  
+(Only empty board is valid — single piece would be lonely)
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
