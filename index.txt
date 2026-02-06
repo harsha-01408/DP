@@ -2143,3 +2143,37 @@ Output:
 (Only empty board is valid — single piece would be lonely)
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem: Count Valid Passwords
+
+You are given two integers n and k.
+
+A password is a string of length n consisting only of lowercase English letters
+('a' to 'z').
+
+The password is considered invalid if it contains k or more identical
+consecutive characters.
+
+Determine the total number of valid passwords of length n.
+
+Since the answer may be very large, output the result modulo (10^9 + 7).
+
+Input:
+- A single line containing two integers n and k.
+
+Output:
+- Print a single integer: the number of valid passwords modulo (10^9 + 7).
+
+Example:
+Input:
+2 2
+
+Output:
+650
+
+Explanation:
+There are 26^2 = 676 total strings of length 2.
+Among them, 26 strings contain two identical consecutive characters.
+Hence, the number of valid passwords is 676 − 26 = 650.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
