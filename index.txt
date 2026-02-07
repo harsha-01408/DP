@@ -2177,3 +2177,25 @@ Among them, 26 strings contain two identical consecutive characters.
 Hence, the number of valid passwords is 676 − 26 = 650.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given n locations, numbered from 0 to n−1.
+Initially, each location has some resources.
+
+You are also given a matrix costToTransfer,
+where costToTransfer[i][j] is the cost to move
+all resources from location i to location j.
+
+You may move resources through intermediate locations.
+So moving i → j can be done as i → x → j if that is cheaper.
+
+Your task is to move resources so that, in the end,
+resources exist in at most k locations.
+
+You may choose which k (or fewer) locations to keep.
+All other locations must send their resources to one of the chosen locations.
+
+The total cost is the sum of all transfer costs used.
+
+Return the minimum possible total cost to achieve this.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
