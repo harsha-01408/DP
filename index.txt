@@ -2199,3 +2199,17 @@ The total cost is the sum of all transfer costs used.
 Return the minimum possible total cost to achieve this.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Statement:
+
+You are given two integer arrays A and B of sizes N and M respectively.
+
+Select a non-empty subsequence from A and a non-empty subsequence
+from B such that both subsequences have the same length.
+
+For the selected subsequences, compute the sum of products of
+corresponding elements (i.e., the dot product).
+
+Return the maximum possible value of this sum.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
