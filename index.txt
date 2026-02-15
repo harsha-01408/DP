@@ -2213,3 +2213,42 @@ corresponding elements (i.e., the dot product).
 Return the maximum possible value of this sum.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+/*
+You are given an integer n and an integer array R of length n.
+
+There are n towers arranged in a circle, indexed from 0 to n - 1.
+Tower 0 is adjacent to tower n - 1.
+
+If tower i is active, it neutralizes:
+1) itself
+2) every tower whose circular distance from i is at most R[i].
+
+The circular distance between towers i and j is:
+min((i - j + n) % n, (j - i + n) % n).
+
+A tower is neutralized if it is active or covered by at least one active tower.
+
+Return the minimum number of towers that must be activated so that all towers are neutralized.
+
+Function Signature (C++):
+int minActiveTowers(vector<int>& R);
+
+Constraints:
+1 <= n == R.length <= 2 * 10^5
+0 <= R[i] < n
+
+Example 1:
+Input: R = [1,0,1,0,1]
+Output: 2
+
+Example 2:
+Input: R = [0,0,0,0]
+Output: 4
+
+Example 3:
+Input: R = [2,0,0,0,0,0]
+Output: 2
+*/
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
