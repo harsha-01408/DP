@@ -2252,3 +2252,29 @@ Output: 2
 */
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given three integer arrays:
+
+1. workflowList, where workflowList[i] represents the workflow type required at the i-th station.
+2. longStationPrepTimes, where longStationPrepTimes[x] is the preparation time needed when a handler processes workflow type x:
+   - as their first assigned station, or
+   - after previously processing a different workflow type.
+3. shortStationPrepTimes, where shortStationPrepTimes[x] is the preparation time needed when a handler processes workflow type x after previously processing the same workflow type.
+
+There are exactly 2 handlers.
+
+Each station must be assigned to exactly one of the two handlers, and stations must be considered in the given order from left to right.
+
+For any station assigned to a handler:
+- if that handler has never processed a station before, the cost is longStationPrepTimes[type]
+- if the workflow type of the handler's previous station is the same as the current station's type, the cost is shortStationPrepTimes[type]
+- otherwise, the cost is longStationPrepTimes[type]
+
+Return the minimum total preparation time required to process all stations.
+
+Function signature:
+long long minimumPrepTime(vector<int>& workflowList,
+                          vector<int>& longStationPrepTimes,
+                          vector<int>& shortStationPrepTimes);
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
