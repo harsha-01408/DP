@@ -2278,3 +2278,52 @@ long long minimumPrepTime(vector<int>& workflowList,
                           vector<int>& shortStationPrepTimes);
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+/*
+Problem: Construct Best String
+
+You are given:
+- A string array LIST of size n
+- An integer array POINTS of size n, where POINTS[i] is the score for using LIST[i]
+- An integer limit
+
+Your task is to construct a new string ANS by concatenating (with possible overlaps) any strings from LIST, any number of times (including multiple uses of the same string). 
+
+The length of the final string ANS must be ≤ limit.
+
+Every time you use LIST[i] in the construction of ANS (even if it overlaps with previous strings), you add POINTS[i] to your total score.
+
+Return the maximum possible score you can obtain.
+
+Notes:
+- Overlaps are allowed and encouraged (e.g., "pack" + "acknowledge" can become "packnowledge" by overlapping "ack").
+- You can use the same string multiple times.
+- The score is added fully for every usage, regardless of how much overlap occurs.
+- Only the final concatenated length matters (must ≤ limit).
+
+Example 1:
+Input: LIST = ["abc", "pqrs"], POINTS = [5,9], limit = 6
+Output: 10
+Explanation: ANS = "abcabc" (length = 6). "abc" used twice → score = 5 + 5 = 10.
+
+Example 2:
+Input: LIST = ["pack", "acknowledge", "edged"], POINTS = [10,15,8], limit = 15
+Output: 33
+Explanation: ANS = "packnowledged" (length = 13) by overlapping all three strings once each → score = 10 + 15 + 8 = 33.
+
+Constraints (typical for this problem):
+- 1 ≤ n ≤ 20
+- 1 ≤ length of each string ≤ 50
+- 1 ≤ POINTS[i] ≤ 1000
+- 1 ≤ limit ≤ 500
+
+Function Signature:
+*/
+class Solution {
+public:
+    int constructBestString(vector<string>& LIST, vector<int>& POINTS, int limit) {
+        // Your solution code goes here
+    }
+};
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
