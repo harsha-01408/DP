@@ -2327,3 +2327,55 @@ public:
 };
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an integer array cell of length n, where cell[i] represents the value of the i-th cell.
+
+A player starts at cell 0 with an initial score of 0. Cell 0 always has value 0.
+
+From a cell at index i, the player may move to:
+- index i + 1, or
+- index i + p, where p is a prime number whose last digit is 3
+
+The player may not move beyond index n - 1.
+
+Whenever the player lands on a cell, that cell's value is added to the score. The game ends when the player lands on the final cell, index n - 1.
+
+Return the maximum possible score the player can obtain.
+
+Example 1:
+Input:
+cell = [0, -10, -20, -30, 50]
+
+Output:
+20
+
+Explanation:
+One valid path is 0 -> 3 -> 4.
+- Jump from 0 to 3 is allowed because 3 is a prime number ending in 3.
+- Score = cell[3] + cell[4] = -30 + 50 = 20.
+This is the maximum possible score.
+
+Example 2:
+Input:
+cell = [0, 5, -100, 10]
+
+Output:
+15
+
+Explanation:
+A best path is 0 -> 1 -> 3.
+- Move 1 step to index 1: score += 5
+- Jump 2 steps is not allowed unless 2 is a prime ending in 3, which it is not
+- But jump 3 from 0 to 3 is allowed since 3 is prime and ends in 3, giving score 10
+So the best route should be evaluated among all valid moves.
+
+Constraints:
+- 1 <= n <= 10^5
+- cell.length == n
+- cell[0] == 0
+- -10^9 <= cell[i] <= 10^9
+
+Function signature:
+long long maxScore(vector<int>& cell);
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
